@@ -1,11 +1,13 @@
 import { Fragment } from "react";
-import { PropertyTypeButtomWrapper } from "./styles";
-import { IoBusinessSharp } from 'react-icons/io5'
+import { PropertyTypeButtomWrapper, IconWrapper } from "./styles";
 
-export const PropertyTypeButton = ({icon, label}) => (
+
+
+export const PropertyTypeButton = ({icon:Icon, label}) => (
     <PropertyTypeButtomWrapper>
-        <IoBusinessSharp/>
+        <IconWrapper>
+            <Icon />       
+        </IconWrapper>
         <p>{label}</p>
-
     </PropertyTypeButtomWrapper>
 )

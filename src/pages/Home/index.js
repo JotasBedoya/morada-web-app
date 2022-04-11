@@ -1,26 +1,39 @@
 import { Fragment } from "react";
 import { PropertyTypeButton } from "./components/PropertyTypeButton";
 import { PropertyTypesContainer } from "./styles";
+import { IoBusiness, IoHome, IoMap, IoPrism, IoLocation } from 'react-icons/io5';
+import { PropertyCard } from "./components/PropertyType";
+import { ProfileUserName } from "./components/ProfileUserName";
+import { WelcomeMessage } from "./components/WelcomeMessage";
+import { Page } from "../../components/Page";
+
+
+
 
 const PropertiesTypes = [
-    { icon: 'icono-apartamento', label: 'Apartamentos'},
-    { icon: 'icono-casa', label: 'Casas'},
-    { icon: 'icono-lote', label: 'Lotes'},
-    { icon: 'icono-fincas', label: 'Fincas'},
-    { icon: 'icono-local', label: 'Locales'},
+    { icon: IoBusiness, label: 'Apartamentos'},
+    { icon: IoHome, label: 'Casas'},
+    { icon: IoMap, label: 'Lotes'},
+    { icon: IoPrism, label: 'Fincas'},
+    { icon: IoLocation, label: 'Locales'},
 ];
+
+
 
 export const Home = () => (
     
-    <Fragment>
-        <h1>home - morada</h1>
-        
+    <Page>
+        <ProfileUserName />
+        <WelcomeMessage />
         <PropertyTypesContainer>
         {
             PropertiesTypes.map( item => 
             <PropertyTypeButton icon={item.icon} label={item.label} /> )
         }
-        </PropertyTypesContainer>   
-    </Fragment>
+        </PropertyTypesContainer> 
+
+        <PropertyCard />
+
+    </Page>
     
 )
