@@ -2,6 +2,7 @@ import { Fragment } from 'react'
 import {Page} from '../../components/Page'
 import { SubTitle } from '../../globalStyles'
 import { PropertyPrice } from '../Home/components/PropertyPrice'
+import { PropertyDescription } from './components/PropertyDescription'
 import { PropertyDetails } from './components/PropertyDetailInfo'
 import { PropertyImage } from './components/PropertyGallery'
 import { PropertyPageWrapper, PropertyTitle } from './styles'
@@ -23,6 +24,7 @@ export const Property = () =>(
 
             <PropertyDetails />
             <PropertyPrice/>
+            <PropertyDescription/>
 
         </Fragment>
     </Page>
