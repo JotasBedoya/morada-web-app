@@ -18,7 +18,7 @@ export const PropertyImageWrapper = styled.div`
     flex: 30;
     border-radius: 20px;
     img{
-        width: 100%;
+        width: 120%;
         border-radius: inherit;
        /* height: 150px;*/
         
@@ -28,7 +28,7 @@ export const PropertyImageWrapper = styled.div`
 
 export const PropertyInfoWrapper = styled.div`
     flex: 70;
-    margin-left: 20px;
+    margin-left: 50px;
     margin-right: 50px;
     
     h3{

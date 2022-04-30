@@ -13,7 +13,7 @@ export const ProfileUserWrapper = styled.div`
 export const UserNameWrapper = styled.div`
 
     h2{
-        color: #ccc;
+        color: silver;
         height: 10px;
         margin: 0;
         margin-top: 20px;
@@ -32,7 +32,7 @@ export const UserNameWrapper = styled.div`
 export const ProfileUserImageWrapper = styled.div`
 
     img{
-        width: 95px;
+        width: 150px;
         border-radius: 20px;
     }
 
