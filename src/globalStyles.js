@@ -4,6 +4,7 @@ import { MENU_HEIGHT } from './constants/styles';
 export const GlobalStyle = createGlobalStyle`
     *, ::after, ::before{
         box-sizing: border-box;
+        
     }
 
     body {
@@ -52,7 +53,7 @@ export const FormControl = styled.div`
 export const FormControlInput = styled.div`
     flex: 1;
 
-    input[type="email"], input[type="password"], input[type="text"]{
+    input[type="email"], input[type="password"], input[type="text"], select, input[type="number"]{
         display: block;
         width: 100%;
         font-size: 1.1em;
@@ -62,6 +63,10 @@ export const FormControlInput = styled.div`
         border: none;
         outline: none;
     }
+    .radio:hover{
+        display: flex;
+    }
+    
 
 `;
 
@@ -78,7 +83,7 @@ export const TermsForm = styled.div`
     background-color: #F2F2F2;
     padding: 10px 10px;
     font-size: 1em;
-    input[type="checkbox"]{
+    input[type="checkbox"], {
         border-radius: 5px;
         cursor: pointer;
         height: 15px;

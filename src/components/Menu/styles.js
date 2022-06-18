@@ -31,6 +31,7 @@ export const MenuItemWrapper = styled.section`
     }
     p{
         margin: 5px 0;
+        color: #4A148C;
     }
     &:hover{
         background-color: #4A148C;

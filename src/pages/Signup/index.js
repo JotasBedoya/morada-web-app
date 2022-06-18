@@ -1,34 +1,51 @@
 import {Page} from '../../components/Page'
-import { FormControl, PageTitle, TermsForm } from '../../globalStyles';
+import { FormControl, PageTitle, FormControlInput, TermsForm } from '../../globalStyles';
 import { Button } from '../../components/Button';
 
 export const Signup = () => (
     <Page hideMenu>
         <PageTitle>Registro</PageTitle>
-        <form>
+        <form>        
+                <FormControl>
+                    <FormControlInput>
+                        <label>Nombres</label>
+                        <input type="text" ></input>
+                    </FormControlInput>
+                </FormControl>
+
             <FormControl>
-                <label>Nombres</label>
-                <input type="text" ></input>
+                <FormControlInput>
+                    <label>Apellidos</label>
+                    <input type="text" ></input>
+                </FormControlInput>
             </FormControl>
+
             <FormControl>
-                <label>Apellidos</label>
-                <input type="text" ></input>
+                <FormControlInput>
+                    <label>Número de identificación</label>
+                    <input type="text" ></input>
+                </FormControlInput>
             </FormControl>
+
             <FormControl>
-                <label>Número de identificación</label>
-                <input type="text" ></input>
+                <FormControlInput>
+                    <label>Correo electrónico</label>
+                    <input type="email" ></input>
+                    </FormControlInput>
             </FormControl>
+
             <FormControl>
-                <label>Correo electrónico</label>
-                <input type="email" ></input>
+                <FormControlInput>
+                    <label>Contraseña</label>
+                    <input type="password" ></input>
+                    </FormControlInput>
             </FormControl>
+
             <FormControl>
-                <label>Contraseña</label>
-                <input type="password" ></input>
-            </FormControl>
-            <FormControl>
-                <label>Confirmar contraseña</label>
-                <input type="password" ></input>
+                <FormControlInput>
+                    <label>Confirmar contraseña</label>
+                    <input type="password" ></input>
+                </FormControlInput>
             </FormControl>
             <br/>
 
@@ -37,7 +54,9 @@ export const Signup = () => (
                 <br/>
                 <br/>
 
+
             <Button label="Aceptar" linkTo="/Account" />
+            
         </form>
 
 

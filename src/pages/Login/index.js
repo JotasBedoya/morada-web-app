@@ -11,7 +11,7 @@ import { IoEyeOff, IoEye } from 'react-icons/io5'
 export const Login = () => {
 
     let variable = 1;
-    const [visiblePass, setVisiblePass] = useState(false);
+    const [visiblePass, setVisiblePass] = useState(true);
 
     const tooglePasswordVisible = () => {
          setVisiblePass(!visiblePass);
