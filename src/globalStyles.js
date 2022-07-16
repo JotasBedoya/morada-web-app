@@ -66,6 +66,10 @@ export const FormControlInput = styled.div`
     .radio:hover{
         display: flex;
     }
+    span {
+        color: red;
+        font-size: 0.85em;
+    }
     
 
 `;
@@ -83,7 +87,7 @@ export const TermsForm = styled.div`
     background-color: #F2F2F2;
     padding: 10px 10px;
     font-size: 1em;
-    input[type="checkbox"], {
+    input[type="checkbox"] {
         border-radius: 5px;
         cursor: pointer;
         height: 15px;

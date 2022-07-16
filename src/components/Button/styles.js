@@ -19,6 +19,11 @@ const BaseButtonStyle = css`
 
 export const ButtonStyled = styled.button`
     ${BaseButtonStyle}
+    &:disabled{
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
 `;
 
 export const LinkStyled = styled(Link)`
